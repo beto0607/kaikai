@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="90">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="src">
+        <df name="Animation">
+          <in>Animation.cpp</in>
+          <in>Sprite.cpp</in>
+          <in>SpriteAnimation.cpp</in>
+          <in>Track.cpp</in>
+          <in>TrackState.cpp</in>
+          <in>TrackStateChanged.cpp</in>
+        </df>
+        <df name="Audio">
+          <in>Audio.cpp</in>
+          <in>AudioManager.cpp</in>
+          <in>Song.cpp</in>
+          <in>Sound.cpp</in>
+        </df>
+        <df name="Collision">
+          <in>CollisionManager.cpp</in>
+          <in>RectangleShape.cpp</in>
+          <in>Shape.cpp</in>
+        </df>
+        <df name="Command">
+          <in>Cargar.cpp</in>
+          <in>Command.cpp</in>
+          <in>CommandManager.cpp</in>
+          <in>Create.cpp</in>
+          <in>Escalar.cpp</in>
+          <in>MostrarFPS.cpp</in>
+          <in>Move.cpp</in>
+          <in>RectangleCommand.cpp</in>
+          <in>Salir.cpp</in>
+          <in>SetFps.cpp</in>
+        </df>
+        <df name="Core">
+          <in>Clock.cpp</in>
+          <in>Core.cpp</in>
+          <in>MeshLoader.cpp</in>
+          <in>TimeEventListener.cpp</in>
+          <in>XMLLoader.cpp</in>
+        </df>
+        <df name="External">
+          <in>glew.c</in>
+          <in>tinyxml2.cpp</in>
+        </df>
+        <df name="Input">
+          <in>Input.cpp</in>
+          <in>InputController.cpp</in>
+          <in>JostickManager.cpp</in>
+          <in>JoystickListener.cpp</in>
+          <in>KeyBoardListener.cpp</in>
+          <in>KeyBoardManager.cpp</in>
+          <in>MouseEventListener.cpp</in>
+          <in>MouseInputHandler.cpp</in>
+        </df>
+        <df name="Log">
+          <in>Logger.cpp</in>
+        </df>
+        <df name="Networking">
+          <in>Conection.cpp</in>
+          <in>NetManager.cpp</in>
+        </df>
+        <df name="Renderer">
+          <in>Mesh.cpp</in>
+          <in>Model2D.cpp</in>
+          <in>Model3D.cpp</in>
+          <in>Rectangle.cpp</in>
+          <in>Render.cpp</in>
+          <in>RenderBuilder.cpp</in>
+          <in>Renderable.cpp</in>
+          <in>Text.cpp</in>
+        </df>
+        <df name="Scene">
+          <in>Camera.cpp</in>
+          <in>Ligth.cpp</in>
+          <in>Material.cpp</in>
+          <in>MaterialNull.cpp</in>
+          <in>ProjectionMatrix.cpp</in>
+          <in>Scene.cpp</in>
+          <in>SceneManager.cpp</in>
+          <in>SceneNull.cpp</in>
+          <in>SceneReal.cpp</in>
+          <in>TextMaterial.cpp</in>
+        </df>
+        <df name="Scripting">
+          <in>Renderablelua.cpp</in>
+        </df>
+        <df name="Shader">
+          <in>Shader.cpp</in>
+          <in>ShaderManager.cpp</in>
+          <in>ShaderNull.cpp</in>
+          <in>SpriteShader.cpp</in>
+          <in>TextShader.cpp</in>
+        </df>
+        <df name="Texture">
+          <in>Font.cpp</in>
+          <in>TextManager.cpp</in>
+          <in>Texture.cpp</in>
+          <in>TextureManager.cpp</in>
+        </df>
+      </df>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath></executablePath>
+        </makeTool>
+      </makefileType>
+      <folder path="0/src/Animation">
+        <ccTool>
+          <incDir>
+            <pElem>include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/src/Audio">
+        <ccTool>
+          <incDir>
+            <pElem>include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/src/Collision">
+        <ccTool>
+          <incDir>
+            <pElem>include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/src/Command">
+        <ccTool>
+          <incDir>
+            <pElem>include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/src/Core">
+        <ccTool>
+          <incDir>
+            <pElem>include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/src/External">
+        <ccTool>
+          <incDir>
+            <pElem>external/include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/src/Input">
+        <ccTool>
+          <incDir>
+            <pElem>include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/src/Log">
+        <ccTool>
+          <incDir>
+            <pElem>include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/src/Networking">
+        <ccTool>
+          <incDir>
+            <pElem>include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/src/Renderer">
+        <ccTool>
+          <incDir>
+            <pElem>include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/src/Scene">
+        <ccTool>
+          <incDir>
+            <pElem>include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/src/Scripting">
+        <ccTool>
+          <incDir>
+            <pElem>include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/src/Shader">
+        <ccTool>
+          <incDir>
+            <pElem>include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/src/Texture">
+        <ccTool>
+          <incDir>
+            <pElem>include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <item path="src/Animation/Animation.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Animation/Sprite.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Animation/SpriteAnimation.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Animation/Track.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Animation/TrackState.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Animation/TrackStateChanged.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/Audio/Audio.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Audio/AudioManager.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Audio/Song.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Audio/Sound.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Collision/CollisionManager.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Collision/RectangleShape.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Collision/Shape.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Command/Cargar.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Command/Command.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Command/CommandManager.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Command/Create.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Command/Escalar.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Command/MostrarFPS.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Command/Move.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Command/RectangleCommand.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Command/Salir.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Command/SetFps.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Core/Clock.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Core/Core.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Core/MeshLoader.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Core/TimeEventListener.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Core/XMLLoader.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/External/glew.c" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="src/External/tinyxml2.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="src/Input/Input.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="src/Input/InputController.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Input/JostickManager.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="src/Input/JoystickListener.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="src/Input/KeyBoardListener.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="src/Input/KeyBoardManager.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="src/Input/MouseEventListener.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="src/Input/MouseInputHandler.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="src/Log/Logger.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="src/Networking/Conection.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="src/Networking/NetManager.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="src/Renderer/Mesh.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="src/Renderer/Model2D.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="src/Renderer/Model3D.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="src/Renderer/Rectangle.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="src/Renderer/Render.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="src/Renderer/RenderBuilder.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Renderer/Renderable.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="src/Renderer/Text.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="src/Scene/Camera.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="src/Scene/Ligth.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="src/Scene/Material.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="src/Scene/MaterialNull.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="src/Scene/ProjectionMatrix.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="src/Scene/Scene.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="src/Scene/SceneManager.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="src/Scene/SceneNull.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="src/Scene/SceneReal.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="src/Scene/TextMaterial.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="src/Scripting/Renderablelua.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Shader/Shader.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="src/Shader/ShaderManager.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="src/Shader/ShaderNull.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="src/Shader/SpriteShader.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="src/Shader/TextShader.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="src/Texture/Font.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="src/Texture/TextManager.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="src/Texture/Texture.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="src/Texture/TextureManager.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

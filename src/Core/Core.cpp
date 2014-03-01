@@ -20,6 +20,8 @@
 #include <Audio/Audio.h>
 #include <stdio.h>
 
+#include "Core/XMLLoader.h"
+
 using namespace kaikai;
 
 Core::Core()

@@ -23,6 +23,7 @@ namespace kaikai
         class KeyBoardListener;
         class TextManager;
         class MeshLoader;
+        class XMLLoader;
         class RenderBuilder;
         class Renderable;
         
@@ -38,6 +39,7 @@ namespace kaikai
                                         AudioManager* audio;
                                         TextManager* text;
                                         MeshLoader* meshloader;
+                                        XMLLoader* xmlloader;
                                         RenderBuilder* render_builder;
                                         static Core* instance;
                                         GLboolean end_flag;

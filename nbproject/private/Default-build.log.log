@@ -1,0 +1,156 @@
+mkdir build
+mkdir build/lib	
+mkdir build/Core
+mkdir build/Scene
+mkdir build/Shader
+mkdir build/Texture
+mkdir build/Renderer	
+mkdir build/Log	
+mkdir build/Input
+mkdir build/Collision
+mkdir build/examples
+mkdir build/Command
+mkdir build/Animation
+mkdir build/Networking
+mkdir build/Audio
+mkdir build/examples/prueba
+mkdir build/examples/animation
+mkdir build/examples/audio
+mkdir build/examples/net
+mkdir build/examples/demo
+mkdir build/examples/prueba/resources
+mkdir build/examples/prueba/resources/shaders
+make -f src/Animation/Makefile
+make[1]: se ingresa al directorio «/home/beto0607/NetBeansProjects/core»
+g++ -O2 -Iinclude -c src/Animation/Track.cpp -o build/Animation/track.o
+g++ -O2 -Iinclude -c src/Animation/Sprite.cpp -o build/Animation/sprite.o
+g++ -O2 -Iinclude -c src/Animation/SpriteAnimation.cpp -o build/Animation/spriteanimation.o
+g++ -O2 -Iinclude -c src/Animation/Animation.cpp -o build/Animation/animation.o
+g++ -O2 -Iinclude -c src/Animation/TrackStateChanged.cpp -o build/Animation/trackstatechanged.o
+g++ -O2 -Iinclude -c src/Animation/TrackState.cpp -o build/Animation/trackstate.o 
+ar -r -s build/lib/libanimation.a build/Animation/animation.o build/Animation/spriteanimation.o build/Animation/sprite.o build/Animation/track.o build/Animation/trackstatechanged.o build/Animation/trackstate.o
+ar: creating build/lib/libanimation.a
+make[1]: se sale del directorio «/home/beto0607/NetBeansProjects/core»
+make -f src/Audio/Makefile
+make[1]: se ingresa al directorio «/home/beto0607/NetBeansProjects/core»
+g++ -O2 -Iinclude -c src/Audio/AudioManager.cpp -o build/Audio/audiomanager.o
+g++ -O2 -Iinclude -c src/Audio/Audio.cpp -o build/Audio/audio.o
+g++ -O2 -Iinclude -c src/Audio/Sound.cpp -o build/Audio/sound.o
+g++ -O2 -Iinclude -c src/Audio/Song.cpp -o build/Audio/song.o
+ar -r -s build/lib/libaudio.a build/Audio/audiomanager.o build/Audio/audio.o build/Audio/sound.o build/Audio/song.o
+ar: creating build/lib/libaudio.a
+make[1]: se sale del directorio «/home/beto0607/NetBeansProjects/core»
+make -f src/Collision/Makefile
+make[1]: se ingresa al directorio «/home/beto0607/NetBeansProjects/core»
+g++ -O2 -Iinclude -c src/Collision/RectangleShape.cpp -o build/Collision/rectangleshape.o
+g++ -O2 -Iinclude -c src/Collision/Shape.cpp -o build/Collision/shape.o
+g++ -O2 -Iinclude -c src/Collision/CollisionManager.cpp -o build/Collision/collisionmanager.o
+ar -r -s build/lib/libcollision.a build/Collision/collisionmanager.o build/Collision/rectangleshape.o build/Collision/shape.o
+ar: creating build/lib/libcollision.a
+make[1]: se sale del directorio «/home/beto0607/NetBeansProjects/core»
+make -f src/Command/Makefile
+make[1]: se ingresa al directorio «/home/beto0607/NetBeansProjects/core»
+g++ -O2 -Iinclude -c src/Command/CommandManager.cpp -o build/Command/commandmanager.o
+g++ -O2 -Iinclude -c src/Command/Command.cpp -o build/Command/command.o
+g++ -O2 -Iinclude -c src/Command/Cargar.cpp -o build/Command/load.o
+g++ -O2 -Iinclude -c src/Command/RectangleCommand.cpp -o build/Command/rectanglecommand.o
+g++ -O2 -Iinclude -c src/Command/Salir.cpp -o build/Command/salir.o
+g++ -O2 -Iinclude -c src/Command/MostrarFPS.cpp -o build/Command/mostrarfps.o
+g++ -O2 -Iinclude -c src/Command/Move.cpp -o build/Command/move.o
+g++ -O2 -Iinclude -c src/Command/Create.cpp -o build/Command/crear.o
+g++ -O2 -Iinclude -c src/Command/Escalar.cpp -o build/Command/escale.o
+g++ -O2 -Iinclude -c src/Command/SetFps.cpp -o build/Command/setfps.o
+ar -r  -s build/lib/libcommand.a build/Command/command.o build/Command/salir.o build/Command/load.o build/Command/move.o build/Command/escale.o build/Command/commandmanager.o build/Command/mostrarfps.o build/Command/crear.o build/Command/rectanglecommand.o build/Command/setfps.o
+ar: creating build/lib/libcommand.a
+make[1]: se sale del directorio «/home/beto0607/NetBeansProjects/core»
+make -f src/Core/Makefile
+make[1]: se ingresa al directorio «/home/beto0607/NetBeansProjects/core»
+g++ -O2 -Iinclude -c src/Core/Core.cpp -o build/Core/core.o
+g++ -O2 -Iinclude -c src/Core/Clock.cpp -o build/Core/clock.o
+g++ -O2 -Iinclude -c src/Core/TimeEventListener.cpp -o build/Core/timeeventlistener.o
+g++ -O2 -Iinclude -c src/Core/MeshLoader.cpp -o build/Core/meshloader.o
+ar -r  -s build/lib/libcore.a build/Core/core.o build/Core/clock.o build/Core/timeeventlistener.o build/Core/meshloader.o
+ar: creating build/lib/libcore.a
+make[1]: se sale del directorio «/home/beto0607/NetBeansProjects/core»
+make -f src/External/Makefile
+make[1]: se ingresa al directorio «/home/beto0607/NetBeansProjects/core»
+g++ -Iexternal/include -o build/Core/glew.o -c src/External/glew.c
+make[1]: se sale del directorio «/home/beto0607/NetBeansProjects/core»
+make -f src/Input/Makefile
+make[1]: se ingresa al directorio «/home/beto0607/NetBeansProjects/core»
+g++ -O2 -Iinclude -c src/Input/Input.cpp -o build/Input/input.o 
+g++ -O2 -Iinclude -c src/Input/MouseInputHandler.cpp -o build/Input/mouseinputhandler.o 
+g++ -O2 -Iinclude -c src/Input/MouseEventListener.cpp -o build/Input/mouseeventlistener.o 
+g++ -O2 -Iinclude -c src/Input/JostickManager.cpp -o build/Input/joystickmanager.o 
+g++ -O2 -Iinclude -c src/Input/JoystickListener.cpp -o build/Input/josticklistener.o 
+g++ -O2 -Iinclude -c src/Input/KeyBoardManager.cpp -o build/Input/keyboardmanager.o 
+g++ -O2 -Iinclude -c src/Input/KeyBoardListener.cpp -o build/Input/keyboardlistener.o 
+ar -r  -s build/lib/libinput.a build/Input/input.o build/Input/mouseinputhandler.o build/Input/mouseeventlistener.o build/Input/joystickmanager.o build/Input/josticklistener.o build/Input/keyboardmanager.o build/Input/keyboardlistener.o 
+ar: creating build/lib/libinput.a
+make[1]: se sale del directorio «/home/beto0607/NetBeansProjects/core»
+make -f src/Log/Makefile
+make[1]: se ingresa al directorio «/home/beto0607/NetBeansProjects/core»
+g++ -O2 -Iinclude -c src/Log/Logger.cpp -o build/Log/logger.o 
+ar -r  -s build/lib/liblog.a build/Log/logger.o
+ar: creating build/lib/liblog.a
+make[1]: se sale del directorio «/home/beto0607/NetBeansProjects/core»
+make -f src/Networking/Makefile
+make[1]: se ingresa al directorio «/home/beto0607/NetBeansProjects/core»
+g++ -O2 -Iinclude -c src/Networking/Conection.cpp -o build/Networking/conection.o
+g++ -O2 -Iinclude -c src/Networking/NetManager.cpp -o build/Networking/netmanager.o
+ar -r -s build/lib/libnet.a build/Networking/netmanager.o build/Networking/conection.o
+ar: creating build/lib/libnet.a
+make[1]: se sale del directorio «/home/beto0607/NetBeansProjects/core»
+make -f src/Renderer/Makefile
+make[1]: se ingresa al directorio «/home/beto0607/NetBeansProjects/core»
+g++ -O2 -Iinclude -c src/Renderer/Render.cpp -o build/Renderer/render.o
+g++ -O2 -Iinclude -c src/Renderer/Model2D.cpp -o build/Renderer/model2d.o
+g++ -O2 -Iinclude -c src/Renderer/Rectangle.cpp -o build/Renderer/rectangle.o
+g++ -O2 -Iinclude -c src/Renderer/Renderable.cpp -o build/Renderer/renderable.o
+g++ -O2 -Iinclude -c src/Renderer/Text.cpp -o build/Renderer/text.o
+ar -r  -s build/lib/librenderer.a build/Renderer/model2d.o build/Renderer/rectangle.o build/Renderer/render.o build/Renderer/renderable.o build/Renderer/text.o
+ar: creating build/lib/librenderer.a
+make[1]: se sale del directorio «/home/beto0607/NetBeansProjects/core»
+make -f src/Scene/Makefile
+make[1]: se ingresa al directorio «/home/beto0607/NetBeansProjects/core»
+g++ -O2 -Iinclude -c src/Scene/SceneNull.cpp -o build/Scene/scenenull.o 
+g++ -O2 -Iinclude -c src/Scene/SceneReal.cpp -o build/Scene/scenereal.o 
+g++ -O2 -Iinclude -c src/Scene/SceneManager.cpp -o build/Scene/scenemanager.o 
+g++ -O2 -Iinclude -c src/Scene/MaterialNull.cpp -o build/Scene/materialnull.o 
+g++ -O2 -Iinclude -c src/Scene/Material.cpp -o build/Scene/material.o 
+g++ -O2 -Iinclude -c src/Scene/Scene.cpp -o build/Scene/scene.o 
+g++ -O2 -Iinclude -c src/Scene/ProjectionMatrix.cpp -o build/Scene/projectionmatrix.o 
+g++ -O2 -Iinclude -c src/Scene/Camera.cpp -o build/Scene/camera.o 
+g++ -O2 -Iinclude -c src/Scene/Ligth.cpp -o build/Scene/light.o 
+g++ -O2 -Iinclude -c src/Scene/TextMaterial.cpp -o build/Scene/textmaterial.o 
+ar -r  -s build/lib/libscene.a build/Scene/scenereal.o build/Scene/scenenull.o build/Scene/scenemanager.o build/Scene/materialnull.o build/Scene/material.o build/Scene/scene.o build/Scene/projectionmatrix.o build/Scene/camera.o build/Scene/light.o build/Scene/textmaterial.o
+ar: creating build/lib/libscene.a
+make[1]: se sale del directorio «/home/beto0607/NetBeansProjects/core»
+make -f src/Shader/Makefile
+make[1]: se ingresa al directorio «/home/beto0607/NetBeansProjects/core»
+g++ -O2 -Iinclude -c src/Shader/ShaderNull.cpp -o build/Shader/shadernull.o 
+src/Shader/ShaderNull.cpp:33:1: aviso: conversión obsoleta de una constante de cadena a ‘GLchar* {aka char*}’ [-Wwrite-strings]
+src/Shader/ShaderNull.cpp:42:1: aviso: conversión obsoleta de una constante de cadena a ‘GLchar* {aka char*}’ [-Wwrite-strings]
+g++ -O2 -Iinclude -c src/Shader/TextShader.cpp -o build/Shader/textshader.o 
+src/Shader/TextShader.cpp:36:1: aviso: conversión obsoleta de una constante de cadena a ‘GLchar* {aka char*}’ [-Wwrite-strings]
+src/Shader/TextShader.cpp:49:1: aviso: conversión obsoleta de una constante de cadena a ‘GLchar* {aka char*}’ [-Wwrite-strings]
+g++ -O2 -Iinclude -c src/Shader/Shader.cpp -o build/Shader/shader.o 
+g++ -O2 -Iinclude -c src/Shader/ShaderManager.cpp -o build/Shader/shadermanager.o
+g++ -O2 -Iinclude -c src/Shader/SpriteShader.cpp -o build/Shader/spriteshader.o 
+src/Shader/SpriteShader.cpp:37:1: aviso: conversión obsoleta de una constante de cadena a ‘GLchar* {aka char*}’ [-Wwrite-strings]
+src/Shader/SpriteShader.cpp:49:1: aviso: conversión obsoleta de una constante de cadena a ‘GLchar* {aka char*}’ [-Wwrite-strings]
+ar -r  -s build/lib/libshader.a build/Shader/shadernull.o build/Shader/shader.o build/Shader/shadermanager.o build/Shader/textshader.o build/Shader/spriteshader.o
+ar: creating build/lib/libshader.a
+make[1]: se sale del directorio «/home/beto0607/NetBeansProjects/core»
+make -f src/Texture/Makefile
+make[1]: se ingresa al directorio «/home/beto0607/NetBeansProjects/core»
+g++ -O2 -Iinclude -c src/Texture/Texture.cpp -o build/Texture/texture.o
+g++ -O2 -Iinclude -c src/Texture/TextureManager.cpp -o build/Texture/texturemanager.o
+g++ -O2 -Iinclude -c src/Texture/TextManager.cpp -o build/Texture/textmanager.o
+g++ -O2 -Iinclude -c src/Texture/Font.cpp -o build/Texture/font.o
+ar -r  -s build/lib/libtexture.a build/Texture/texture.o build/Texture/texturemanager.o build/Texture/textmanager.o build/Texture/font.o
+ar: creating build/lib/libtexture.a
+make[1]: se sale del directorio «/home/beto0607/NetBeansProjects/core»
+ar -r  -s build/lib/libengine.a build/Animation/*.o build/Audio/*.o build/Collision/*.o build/Command/*.o build/Core/*.o build/Input/*.o build/Log/*.o build/Networking/*.o build/Renderer/*.o build/Scene/*.o build/Shader/*.o build/Texture/*.o
+ar: creating build/lib/libengine.a
+make: *** No hay ninguna regla para construir el objetivo «examples», necesario para «all».  Alto.
